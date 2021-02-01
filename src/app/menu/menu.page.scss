@@ -1,0 +1,106 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+    }
+  
+    .box {
+      width: 960px;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 243px 69px 127px 78px;
+}
+
+.titulo{
+    --background: purple;
+    color: white;
+}
+
+.titulotexto{
+    color: white !important;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+p{
+    font-size: 1.0em !important;
+    font: Arial;
+    
+    color: black !important;
+    
+  }
+  
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background: purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+    }
+  
+    .box {
+      width: 960px;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 171px 68px 41px 65px;
+      }
+  
+      .login100-form-title {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        color: #333;
+        line-height: 1.2;
+        text-align: center;
+        width: 100%;
+        display: block;
+        padding-bottom: 54px;
+    }
+  
+     // Botões
+      .btnAcao{
+      background-color: #57b846 !important;
+      text-transform: none !important;
+      border-radius: 5px !important;
+      margin: -15px auto !important;
+      margin-top: 20px !important;
+      width: 100px !important;
+      height: 40px !important;
+  }
+    
+  .logoCentro{
+    width: 150px !important;
+    margin: 0 !important;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: none !important;
+  }
+  
+  
+  .ng-invalid.ng-touched:not(form){
+    border: 1px solid red;
+  }

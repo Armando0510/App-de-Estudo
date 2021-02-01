@@ -1,20 +1,54 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content>
+  
+  <div class="container">
+    
+    <div class="box">
+      <div class="logoCentro">
+        <img src="assets/images/angular.png" />
+      </div>
+      <form #f="ngForm" (ngSubmit)="OnSubmit(f)">
+        
+      <!--Email-->
+      <ion-item no-lines>
+        <ion-icon name="mail-outline"></ion-icon>
+        <label for="email" class="control-label">Email:</label>
+      <ion-input type="email" id="email"  name="email" placeholder=" nome@email.com" [(ngModel)]="usuario.email" required #email="ngModel" ></ion-input>
+    </ion-item>
+    <div *ngIf="!email.valid && email.touched">
+      E-mail é obrigatório!
+    </div>
+
+      <!-- Senha -->
+       <ion-item no-lines>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <label for="senha" class="control-label">Senha:</label>
+        <ion-input type="password" class="form-control" id="senha"  name="senha" [(ngModel)]="usuario.senha" required #senha="ngModel" ></ion-input>
+      </ion-item>
+      <div *ngIf="!senha.valid && senha.touched">
+        Senha é obrigatória!
+      </div>
+    
+      <!-- Botões -->
+      <ion-row>
+        <button  type="submit" ion-button class="btnAcao" [disabled]="!f.valid">Entrar</button>
+      </ion-row>
+      <ion-row>
+        <button (click)="criarconta()" ion-button class="btnAcao">Criar Conta</button>
+      </ion-row>
+<br>
+        <p (click)="Politica()" style="text-align:center;" >Política de Privacidade</p>
+    
+        <p (click)="sobre()" style="text-align:center;" >Sobre Nós</p>
+       
+        
+    </form>
+    </div>
   </div>
+
+  
+      
+  
+    
 </ion-content>

@@ -1,0 +1,54 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+    }
+  
+    .box {
+      width: 960px;
+      background: purple;
+      border-radius: 10px;
+      overflow: hidden;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 243px 69px 127px 78px;
+      }
+
+      p{
+        background: purple;
+      }
+
+     .ng-invalid.ng-touched:not(form) {
+    border: 1px solid purple;
+}
+label{
+  color: white;
+}
+
+ion-icon{
+  color: white;
+}
+
+.erro{
+  color: white;
+}
+  // Botões
+  .btnAcao{
+    background-color: #57b846 !important;
+    text-transform: none !important;
+    border-radius: 5px !important;
+    margin: -15px auto !important;
+    margin-top: 20px !important;
+    width: 100px !important;
+    height: 40px !important;
+    color: white;
+}
